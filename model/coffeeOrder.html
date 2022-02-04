@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click To Order</title>
+    <link rel="stylesheet" href="../css/coffeeOrderStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+   
+    <script defer src="coffeeOrder.js"> </script>
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            
+        <img src="../image/logo.png" alt="coffeehouse" id="logo"  >
+            <ul class="options">
+               <li> <a href="#" target="_blank" class="navBut">HOME</a> </li>
+               <li> <a href="#" class="navBut">CHECK MORE</a> </li>
+               <li> <a href="#" class="navBut">HOW TO ORDER</a> </li>
+               <li> <a href="#" class="navBut">SIGN UP</a> </li>
+               
+            </ul>
+        </nav>
+        <div class="mainpart">
+            
+        </div>
+
+        <div class="form">
+
+            <form action="#" name="Myform" onsubmit="return validation()" method="post" >
+                <h2>Place Your Order Here</h2>
+
+                    <p>*sign in to avail special offers on your favourite dishes</p>
+                
+                    <div id="name">
+                    <label for="" class="name">Enter Your Name:</label>
+                    <input type="text" name="name" id="customername" placeholder="abhishek">
+                    
+                </div>
+                
+                <div id="Email">
+                    <label for="" class="mail">Enter Your Email-id:</label>
+                    <input type="text" name="mail" id="customermail" placeholder="abhishek@gmail.com">
+                    
+
+                </div>
+
+                <div id="phn">
+                    <label for="" class="number">Enter Your Phone No.:</label>
+                    <input type="number" name="number" id="customernumber" placeholder="xxxxxxxxxx">
+                    
+
+                </div>
+
+                <div id="dishName">
+                    <label for="" class="dish">Enter Your Dish:</label>
+                    <input type="text" name="dish" id="customerdish" placeholder="frappe">
+                    
+
+                </div>
+
+                
+                <div id="quantitiy">
+                    <label for="" class="items">Enter quantity:</label>
+                    <input type="number" name="items" id="customeritem" placeholder="x">
+                    
+
+                </div>
+                
+                <div id="btn">
+                    <input type="submit" value="Place Order">
+                    
+                </div>
+
+            </form>
+        </div>
+        
+        <div class="feedback">
+            <form action="#" onsubmit=" return validation()">
+                 
+                <div class="customerfeedback">
+
+                     <label for="customerfeedback">Any feedback or complaint:</label>
+                     <textarea id="customerfeedback" name="customerfeedback" placeholder="Enter your feedback" rows="9" cols="50"></textarea>
+                </div>
+
+                <div id="btn">
+                    <input type="submit" value="comment" >
+                </div>
+
+            </form>
+            
+        </div>
+
+    </div>
+</body>
+</html>

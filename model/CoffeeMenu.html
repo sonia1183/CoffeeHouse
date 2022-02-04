@@ -1,0 +1,179 @@
+<html>
+<head>
+	<title>COFFEE ORDER PLACE</title>
+	<style>
+		nav{
+display: flex;
+		}
+h1{
+	text-align: center;
+	color:#fff;
+	text-shadow: 1px 2px 2px pink;
+	font-family:georgia;
+}
+.head{
+	border:2px solid yellow;
+	border-radius: 10%;
+	animation-name:example;
+animation-duration:10s;
+animation-iteration-count:4;
+}
+@keyframes example{
+ 0%   {background-color: black;}
+  25%  {background-color: #c19a6b;}
+  50%  {background-color: black;}
+  100% {background-color: brown;}
+}
+.logo{
+	float:left;
+	margin-left: 20px;
+}
+
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../image/background.jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	color:#fff;
+}
+ul li{
+	color:#fff;
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 40px;
+	margin-top: 40px;
+}
+ul li a{
+	text-decoration: none;
+	color:#fff;
+}
+
+.list{
+	float:right;
+	margin-left: 350px;
+}
+p.one{
+font-size:20px;
+text-align:center;
+font-style:italic;
+background-color:white;
+color:black;
+border:2px solid brown;
+border-radius:20px;
+ opacity: 0.5;
+}
+table{
+	margin-left: 20px;
+}
+th,td{
+	width:50%;
+}
+
+.d1{
+text-align: left;
+}
+ul li:hover{
+	 font-size: 110%;
+    font-weight: bold;
+    background-color: orange;
+    border-radius: 12px;
+    color: white;
+    text-shadow:2px 2px blue ;
+    border-spacing: 20px;
+    border:5px solid red;
+}
+input,textarea{
+font-size: 20px;
+}
+
+input[type="submit"]{
+	color:#fff;
+	background-color: red;
+	border-color: black;
+	border-radius: 20px;
+	margin-left: 60px;
+}
+input[type="submit"]:hover{
+	background-color:lightblue;
+     color:white;
+
+}
+
+	</style>
+</head>
+<body>
+	<div class="head">
+	<h1>COFFEE HOUSE</h1></div>
+	<nav>
+		<img src="../image/logo.png" class="logo">
+
+	<ul class="list">
+		<li><a href="../index.html"> HOME </a></li>
+		<li><a href="../model/HowToOrder.html"> HOW TO ORDER</a> </li>
+		<li><a href="../model/cakesMenu.html">CHECK MORE</a></li>
+		<li><a href="../components/login.html"> SIGN IN </a></li>
+	</ul>
+</nav>
+<p class="one">We always serve fresh brewed</p>
+<table>
+<tr>
+	<th></th>
+	<th style=" opacity: 0.5;background-color:white;color: black;border-radius: 20px;">TO ORDER:</th>
+</tr>
+<tr>
+	<td width="50%">
+		<img src="../image/menu.jpg" width="75%">
+	</td>
+	<td>
+		<div align="center" class="d1">
+		<form name="Myform" onsubmit="return validation()" method="post" action="#">
+			<div>
+			<label>Enter your name: </label><br><br>
+			<input type="text" placeholder="abc" size="15" name="name"></div><br>
+			<div>
+			<label>Mobile Number: </label><br><br>
+			<input type="number" size="10" placeholder="xxxxxxxxxx" name="Mobile"></div><br>
+			<div>
+			<label>Address: </label><br><br>
+			<textarea rows="5" cols="30" placeholder="Address...." name="Address"></textarea></div><br>
+			<div>
+				<label>Enter Your Order:</label><br><br>
+				<input type="text" placeholder="vanilla latte" name="dish">
+			</div>
+			<div>
+				<label>Quantity:</label><br><br>
+				<input type="number" name="item" min="0" max="10">
+			</div><br>
+			<input type="submit" value="Place Order">
+		</form>
+	</div>
+	</td>
+</tr>
+<!--javascript-->
+<script>
+	function validation() {
+  var x = document.forms["Myform"]["name"].value;
+  var y = document.forms["Myform"]["Mobile"].value;
+  var z = document.forms["Myform"]["Address"].value;
+   var a = document.forms["Myform"]["dish"].value;
+    var b = document.forms["Myform"]["item"].value;
+  if(x=="" && y=="" && z=="" && a=="" && b=="")
+  {
+    alert("please fill all detail!!!");
+    return false;
+  }
+   else if(x=="" || y=="" || z=="" || a=="" || b=="")
+  {
+    alert("Something is missing please check first !!!");
+    return false;
+  }
+  else
+  {
+  	window.open("../components/thankupage.html");
+  }
+
+}
+</script>
+	</table>
+</body>

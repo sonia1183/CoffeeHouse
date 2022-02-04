@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CoffeHouse</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+	<nav>
+		<div class="row clearfix">
+			<img src="./image/logo.png" class="logo">
+			<ul class="main-nav animated slideInDown" id="check-class">
+              
+              <li><a href="./model/CoffeeMenu.html">COFFEE ORDER</a></li>
+              <li><a href="./model/HowToOrder.html">HOW TO ORDER</a></li>
+              <li><a href="./model/cakesMenu.html">CHECK MORE</a></li>
+              <li><a href="./components/login.html">Sign Up</a></li>
+			</ul>
+			<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+		</div>
+	</nav>
+	<div class="main-content-header">
+	<h1>WELCOME TO <span class="colorchange">COFFEE HOUSE</span>.
+	<br>HOUSE OF CAKE AND COFFEE LOVER!!!</h1>
+	<a href="./model/coffeeOrder.html" class="btn btn-full">click to order</a>
+	<a href="./model/cakesMenu.html" class="btn btn-nav">Show me more</a>
+</div>
+<div class="advt" id="demo">
+	<fieldset>
+		<legend> <button><p title="information about amazon"><a href="https://en.wikipedia.org/wiki/Amazon_(company)#:~:text=It%20is%20the%20world's%20largest,by%20revenue%20in%20the%20world.&text=Amazon%20was%20founded%20by%20Jeff,%2C%20on%20July%205%2C%201994."> i </a></p> </button><button type="button" onclick="document.getElementById('demo').style.display='none'"><p title="close this advt."> x</p> </button></legend>
+	<a href="https://www.amazon.in/?ie=UTF8&ext_vrnc=hi&tag=googhydrabk-21&ascsubtag=_k_EAIaIQobChMIiZuQvPKD6wIVlzMrCh1NhwFqEAAYASAAEgJJw_D_BwE_k_&ext_vrnc=hi&gclid=EAIaIQobChMIiZuQvPKD6wIVlzMrCh1NhwFqEAAYASAAEgJJw_D_BwE"><img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fgordonkelly%2Ffiles%2F2018%2F07%2Famazon-prime-day-2018-july-16.jpg"  ></a> </fieldset>
+	</div>
+</header>
+<script type="text/javascript">
+	function slideshow()
+	{
+var x= document.getElementById('check-class');
+if(x.style.display === "none")
+{
+	x.style.display="block";
+	}
+	else
+	{
+		x.style.display="none";
+	}
+}
+</script>
+
+</body>
+</html>

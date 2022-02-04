@@ -1,0 +1,136 @@
+body{
+    font-family:  'Baloo 2', cursive;
+    background:url('../image/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    width: 97vw;
+    height:10vh;
+   border-radius: 12px;
+}
+
+#logo{
+    margin-right: 35vw;
+    width: 20%;
+}
+#innerlogo{
+    background-color: black;
+    border-radius: 12px;
+    position: absolute;
+    top: 0px;
+    left: 08vw;
+}
+
+.options{
+    
+    flex-basis: 70vw;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.navBut{
+    padding-left: 4vh;
+    padding-right: 4vh;
+    text-decoration: none;
+    color: white;
+    }
+.navBut:hover{
+    font-size: 110%;
+    font-weight: bold;
+    background-color: orange;
+    border-radius: 12px;
+    color: white;
+    text-shadow:2px 2px blue ;
+}
+
+.mainpart{
+    background: url('../image/menu.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    position: absolute;
+    top :15vh;
+    width: 55%;
+    height: 120%;
+
+}
+.form{
+    
+    display: flex;
+    position: absolute;
+    
+    top: 10%;
+    left:60vw;
+    height: 75%;  
+    width: 30vw;
+}
+
+.form h2{
+    font-weight: bold;
+    color: lightgoldenrodyellow;
+    font-size: 190%;
+    text-align: center;
+}
+.form p{
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+    font-size: 105%;
+}  
+.form label{
+    margin-right: 12vw;
+    color: white;
+}
+#btn{
+    border:none;
+    text-align: center;
+}
+.form input:hover{
+    font-size: 90%;
+    border-radius: 12px;
+    background: silver;
+    color: black;
+    font-weight: bold;
+}
+input[type="submit"]{
+    margin-top: 12px;
+    font-size: 120%;
+    background-color: blue;
+    color: white;
+    border-radius: 12px;
+
+}
+
+input[type="submit"]:hover{
+    font-size: 150%;
+    background-color: green;
+    color: white;
+ 
+    box-shadow:2px 2px black ;   
+}
+
+
+.feedback{
+    display: flex;
+    position: absolute;
+    
+    top: 93%;
+    left:60vw;  
+    width: 30vw;
+    
+}
+
+.customerfeedback{
+    color: darkgreen;
+    font-weight: bolder  ;
+    font-size: 200%;
+    
+}
